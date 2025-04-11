@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9EE21417-6656-4F9B-B8F2-1FB05A954C73}|yaml-convector\\yaml-convector.vcxproj|E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\yaml-convector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9EE21417-6656-4F9B-B8F2-1FB05A954C73}|yaml-convector\\yaml-convector.vcxproj|solutionrelative:yaml-convector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EE21417-6656-4F9B-B8F2-1FB05A954C73}|yaml-convector\\yaml-convector.vcxproj|E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\yaml-convector\\YamlParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9EE21417-6656-4F9B-B8F2-1FB05A954C73}|yaml-convector\\yaml-convector.vcxproj|solutionrelative:yaml-convector\\YamlParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EE21417-6656-4F9B-B8F2-1FB05A954C73}|yaml-convector\\yaml-convector.vcxproj|E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\yaml-convector\\YamlParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9EE21417-6656-4F9B-B8F2-1FB05A954C73}|yaml-convector\\yaml-convector.vcxproj|solutionrelative:yaml-convector\\YamlParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YamlParser.cpp",
+              "DocumentMoniker": "E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\yaml-convector\\YamlParser.cpp",
+              "RelativeDocumentMoniker": "yaml-convector\\YamlParser.cpp",
+              "ToolTip": "E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\yaml-convector\\YamlParser.cpp",
+              "RelativeToolTip": "yaml-convector\\YamlParser.cpp",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAAIwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-09T14:15:10.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "YamlParser.h",
+              "DocumentMoniker": "E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\yaml-convector\\YamlParser.h",
+              "RelativeDocumentMoniker": "yaml-convector\\YamlParser.h",
+              "ToolTip": "E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\yaml-convector\\YamlParser.h",
+              "RelativeToolTip": "yaml-convector\\YamlParser.h",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-09T14:14:04.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\yaml-convector\\main.cpp",
+              "RelativeDocumentMoniker": "yaml-convector\\main.cpp",
+              "ToolTip": "E:\\Chemkin-to-Yaml\\cantera-yaml\u6587\u4EF6\u89E3\u6790\u5668\\yaml-convector\\yaml-convector\\main.cpp",
+              "RelativeToolTip": "yaml-convector\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-09T13:21:40.279Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
