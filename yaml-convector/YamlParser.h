@@ -3,26 +3,26 @@
 #include <map>
 #include <vector>
 #include <any>
-#include <yaml-cpp/yaml.h>
+#include <yaml-cpp/yaml.h>// åŒ…å«yaml-cppåº“ï¼Œè¿™æ˜¯å®é™…çš„YAMLè§£æå¼•æ“
 
-// ¼ò»¯µÄYAMLÖµÀà
+
 class YamlValue {
 public:
-    // ÖµÀàĞÍÃ¶¾Ù
+    //map :æ˜ å°„è¡¨(é”®å€¼å¯¹é›†åˆ)    sequence :åºåˆ—(å…ƒç´ é›†åˆ)
     enum class Type {
         Null, String, Number, Boolean, Map, Sequence
     };
 
-    // ¹¹Ôìº¯Êı
+    
     YamlValue() : m_type(Type::Null) {}
     YamlValue(const std::string& value) : m_type(Type::String), m_string(value) {}
     YamlValue(double value) : m_type(Type::Number), m_number(value) {}
     YamlValue(bool value) : m_type(Type::Boolean), m_bool(value) {}
 
-    // ´ÓYAML::Node¹¹Ôì
+    
     YamlValue(const YAML::Node& node);
 
-    // ÀàĞÍ¼ì²é
+    
     bool isNull() const { return m_type == Type::Null; }
     bool isString() const { return m_type == Type::String; }
     bool isNumber() const { return m_type == Type::Number; }
@@ -30,14 +30,14 @@ public:
     bool isMap() const { return m_type == Type::Map; }
     bool isSequence() const { return m_type == Type::Sequence; }
 
-    // Öµ·ÃÎÊ
+    
     std::string asString() const;
     double asNumber() const;
     bool asBoolean() const;
     const std::map<std::string, YamlValue>& asMap() const;
     const std::vector<YamlValue>& asSequence() const;
 
-    // µ÷ÊÔÊä³ö
+    
     void print(int indent = 0) const;
 
 private:
@@ -49,12 +49,12 @@ private:
     std::vector<YamlValue> m_sequence;
 };
 
-// YAML½âÎöÆ÷Àà
+//å°†è§£æç»“æœå°è£…æˆYamlValueå¯¹è±¡è¿”å›,æ–‡ä»¶æˆ–å­—ç¬¦ä¸² â†’ yaml-cppè§£æ â†’ YAML::Node â†’ YamlValueè½¬æ¢ â†’ ç”¨æˆ·ä»£ç 
 class YamlParser {
 public:
-    // ´ÓÎÄ¼ş¼ÓÔØYAML
+    
     static YamlValue loadFile(const std::string& filename);
 
-    // ´Ó×Ö·û´®¼ÓÔØYAML
+    
     static YamlValue loadString(const std::string& yaml);
 };

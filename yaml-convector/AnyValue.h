@@ -6,10 +6,10 @@
 #include <stdexcept>
 #include <iostream>
 
-// Ç°ÏòÉùÃ÷
+
 class AnyMap;
 
-// ÓÃÓÚ´íÎó´¦ÀíµÄÒì³£Àà
+//ç”¨äºé”™è¯¯å¤„ç†çš„è‡ªå®šä¹‰å¼‚å¸¸ç±»  è¿™æ˜¯ä¸€ä¸ªè‡ªå®šä¹‰å¼‚å¸¸ç±»ï¼Œç»§æ‰¿è‡ª std::runtime_errorï¼š
 class CanteraError : public std::runtime_error
 {
 public:
@@ -24,11 +24,11 @@ private:
     std::string m_msg;
 };
 
-// ÄÜ¹»´æ´¢ÈÎÒâÀàĞÍÖµµÄÈİÆ÷Àà
+//è¿™æ˜¯æ ¸å¿ƒçš„æ•°æ®å®¹å™¨ç±»ï¼Œèƒ½å¤Ÿå­˜å‚¨å¤šç§ä¸åŒç±»å‹çš„æ•°æ®ï¼š
 class AnyValue
 {
 public:
-    // ¹¹Ôìº¯Êı
+    
     AnyValue() = default;
     AnyValue(const std::string& value) : m_value(value) {}
     AnyValue(double value) : m_value(value) {}
@@ -40,7 +40,7 @@ public:
     AnyValue(const std::vector<AnyValue>& value) : m_value(value) {}
     AnyValue(const AnyMap& value);
 
-    // ÀàĞÍ¼ì²é·½·¨
+    
     bool isString() const { return m_value.type() == typeid(std::string); }
     bool isDouble() const { return m_value.type() == typeid(double); }
     bool isInt() const { return m_value.type() == typeid(long int); }
@@ -49,7 +49,7 @@ public:
     bool isMap() const;
     bool isScalar() const { return isString() || isDouble() || isInt() || isBool(); }
 
-    // Öµ·ÃÎÊ·½·¨
+    
     const std::string& asString() const;
     double asDouble() const;
     long int asInt() const;
@@ -59,10 +59,10 @@ public:
     const std::vector<AnyValue>& asValueVector() const;
     const AnyMap& asMap() const;
 
-    // »ñÈ¡ÀàĞÍĞÅÏ¢
+    
     std::string type() const;
 
-    // Î»ÖÃĞÅÏ¢ (ÓÃÓÚ´íÎó±¨¸æ)
+   //// è®¾ç½®YAMLèŠ‚ç‚¹åœ¨åŸæ–‡ä»¶ä¸­çš„ä½ç½®ä¿¡æ¯
     void setLocation(int line, int column) {
         m_line = line;
         m_column = column;
@@ -71,13 +71,13 @@ public:
     int getLine() const { return m_line; }
     int getColumn() const { return m_column; }
 
-    // ÉèÖÃ¼üÃû
+   //// è®¾ç½®YAMLèŠ‚ç‚¹çš„é”®å
     void setKey(const std::string& key) { m_key = key; }
     const std::string& getKey() const { return m_key; }
 
 private:
-    std::string m_key; // µ±´ËÖµ´æ´¢ÔÚAnyMapÖĞÊ±µÄ¼üÃû
-    std::any m_value; // Êµ¼Ê´æ´¢µÄÖµ
-    int m_line = -1;  // ÔÚYAMLÎÄ¼şÖĞµÄĞĞºÅ
-    int m_column = -1; // ÔÚYAMLÎÄ¼şÖĞµÄÁĞºÅ
+    std::string m_key; 
+    std::any m_value; 
+    int m_line = -1;  
+    int m_column = -1; 
 };
