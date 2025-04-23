@@ -10,19 +10,19 @@
 class AnyMap;
 
 //用于错误处理的自定义异常类  这是一个自定义异常类，继承自 std::runtime_error：
-class CanteraError : public std::runtime_error
-{
-public:
-    CanteraError(const std::string& procedure, const std::string& msg)
-        : std::runtime_error(procedure + ": " + msg), m_procedure(procedure), m_msg(msg) {}
+// class CanteraError : public std::runtime_error
+// {
+// public:
+//     CanteraError(const std::string& procedure, const std::string& msg)
+//         : std::runtime_error(procedure + ": " + msg), m_procedure(procedure), m_msg(msg) {}
 
-    const std::string& procedure() const { return m_procedure; }
-    const std::string& getMessage() const { return m_msg; }
+//     const std::string& procedure() const { return m_procedure; }
+//     const std::string& getMessage() const { return m_msg; }
 
-private:
-    std::string m_procedure;
-    std::string m_msg;
-};
+// private:
+//     std::string m_procedure;
+//     std::string m_msg;
+// };
 
 //这是核心的数据容器类，能够存储多种不同类型的数据：
 class AnyValue

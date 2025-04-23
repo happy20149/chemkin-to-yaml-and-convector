@@ -21,15 +21,36 @@ YamlValue::YamlValue(const YAML::Node& node) {
             m_bool = false;
         }
         else {
-            // 尝试解析为数字
-            try {
-                m_number = std::stod(value);
-                m_type = Type::Number;
-            }
-            catch (...) {
-                // 默认为字符串
+            // 检查是否是带引号的字符串（使用YAML底层API）
+            if (node.Tag() == "!") { // YAML中的显式字符串标签
                 m_type = Type::String;
                 m_string = value;
+            } else {
+                // 检查是否是以数字开头但包含非数字字符的值
+                bool hasNonDigit = false;
+                for (char c : value) {
+                    if (!std::isdigit(c) && c != '.' && c != 'e' && c != 'E' && c != '-' && c != '+') {
+                        hasNonDigit = true;
+                        break;
+                    }
+                }
+                
+                if (hasNonDigit && std::isdigit(value[0])) {
+                    // 如果以数字开头但包含非数字字符，强制作为字符串
+                    m_type = Type::String;
+                    m_string = value;
+                } else {
+                    // 尝试解析为数字
+                    try {
+                        m_number = std::stod(value);
+                        m_type = Type::Number;
+                    }
+                    catch (...) {
+                        // 默认为字符串
+                        m_type = Type::String;
+                        m_string = value;
+                    }
+                }
             }
         }
     }
@@ -139,3 +160,4 @@ YamlValue YamlParser::loadString(const std::string& yaml) {
         throw std::runtime_error("YAML parsing error: " + std::string(e.what()));
     }
 }
+

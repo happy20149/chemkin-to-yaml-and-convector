@@ -85,6 +85,98 @@ E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yam
       D:\vs2022\VC\Tools\MSVC\14.43.34808\include\list(759,7):
       参见“std::list<YAML::detail::node_data::kv_pair,std::allocator<std::pair<YAML::detail::node *,YAML::detail::node *>>>”的声明
   
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\yaml-convector\main.cpp(686,99): warning C4566: 由通用字符名称“\u00C5”表示的字符不能在当前代码页(936)中表示出来
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\yaml-convector\main.cpp(719,102): warning C4566: 由通用字符名称“\u00C5”表示的字符不能在当前代码页(936)中表示出来
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\yaml-convector\main.cpp(719,102): warning C4566: 由通用字符名称“\u00B3”表示的字符不能在当前代码页(936)中表示出来
+  YamlParser.cpp
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\yaml-convector\YamlParser.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\yaml-convector\YamlParser.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“YamlParser.cpp”)
+  
+  Defining YAML_CPP_API for DLL import
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\parser.h(85,28): warning C4251: “YAML::Parser::m_pScanner”:“std::unique_ptr<YAML::Scanner,std::default_delete<YAML::Scanner>>”需要有 dll 接口以供“YAML::Parser”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\memory(3332,7):
+      参见“std::unique_ptr<YAML::Scanner,std::default_delete<YAML::Scanner>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\parser.h(86,31): warning C4251: “YAML::Parser::m_pDirectives”:“std::unique_ptr<YAML::Directives,std::default_delete<YAML::Directives>>”需要有 dll 接口以供“YAML::Parser”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\memory(3332,7):
+      参见“std::unique_ptr<YAML::Directives,std::default_delete<YAML::Directives>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\binary.h(65,30): warning C4251: “YAML::Binary::m_data”:“std::vector<unsigned char,std::allocator<unsigned char>>”需要有 dll 接口以供“YAML::Binary”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector<unsigned char,std::allocator<unsigned char>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\ostream_wrapper.h(49,29): warning C4251: “YAML::ostream_wrapper::m_buffer”:“std::vector<char,std::allocator<char>>”需要有 dll 接口以供“YAML::ostream_wrapper”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector<char,std::allocator<char>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\emitter.h(132,33): warning C4251: “YAML::Emitter::m_pState”:“std::unique_ptr<YAML::EmitterState,std::default_delete<YAML::EmitterState>>”需要有 dll 接口以供“YAML::Emitter”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\memory(3332,7):
+      参见“std::unique_ptr<YAML::EmitterState,std::default_delete<YAML::EmitterState>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\exceptions.h(153,44): warning C4275: 非 dll 接口 class“std::runtime_error”用作 dll 接口 class“YAML::Exception”的基
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      参见“std::runtime_error”的声明
+      E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\exceptions.h(153,20):
+      参见“YAML::Exception”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\exceptions.h(162,15): warning C4251: “YAML::Exception::msg”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“YAML::Exception”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\node\node.h(135,15): warning C4251: “YAML::Node::m_invalidKey”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“YAML::Node”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\node\node.h(136,40): warning C4251: “YAML::Node::m_pMemory”:“std::shared_ptr<YAML::detail::memory_holder>”需要有 dll 接口以供“YAML::Node”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+      参见“std::shared_ptr<YAML::detail::memory_holder>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\node\detail\memory.h(31,9): warning C4251: “YAML::detail::memory::m_nodes”:“std::set<YAML::detail::shared_node,std::less<YAML::detail::shared_node>,std::allocator<YAML::detail::shared_node>>”需要有 dll 接口以供“YAML::detail::memory”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\set(51,7):
+      参见“std::set<YAML::detail::shared_node,std::less<YAML::detail::shared_node>,std::allocator<YAML::detail::shared_node>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\node\detail\memory.h(42,17): warning C4251: “YAML::detail::memory_holder::m_pMemory”:“std::shared_ptr<YAML::detail::memory>”需要有 dll 接口以供“YAML::detail::memory_holder”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+      参见“std::shared_ptr<YAML::detail::memory>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\node\detail\node_data.h(104,15): warning C4251: “YAML::detail::node_data::m_tag”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“YAML::detail::node_data”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\node\detail\node_data.h(108,15): warning C4251: “YAML::detail::node_data::m_scalar”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“YAML::detail::node_data”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\node\detail\node_data.h(112,12): warning C4251: “YAML::detail::node_data::m_sequence”:“std::vector<YAML::detail::node *,std::allocator<YAML::detail::node *>>”需要有 dll 接口以供“YAML::detail::node_data”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector<YAML::detail::node *,std::allocator<YAML::detail::node *>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\node\detail\node_data.h(118,12): warning C4251: “YAML::detail::node_data::m_map”:“std::vector<std::pair<YAML::detail::node *,YAML::detail::node *>,std::allocator<std::pair<YAML::detail::node *,YAML::detail::node *>>>”需要有 dll 接口以供“YAML::detail::node_data”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector<std::pair<YAML::detail::node *,YAML::detail::node *>,std::allocator<std::pair<YAML::detail::node *,YAML::detail::node *>>>”的声明
+  
+E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\packages\fluid.yaml-cpp.1.0.10\build\include\yaml-cpp\node\detail\node_data.h(122,20): warning C4251: “YAML::detail::node_data::m_undefinedPairs”:“std::list<YAML::detail::node_data::kv_pair,std::allocator<std::pair<YAML::detail::node *,YAML::detail::node *>>>”需要有 dll 接口以供“YAML::detail::node_data”的客户端使用
+  (编译源文件“YamlParser.cpp”)
+      D:\vs2022\VC\Tools\MSVC\14.43.34808\include\list(759,7):
+      参见“std::list<YAML::detail::node_data::kv_pair,std::allocator<std::pair<YAML::detail::node *,YAML::detail::node *>>>”的声明
+  
+  正在生成代码...
   yaml-convector.vcxproj -> E:\Chemkin-to-Yaml\cantera-yaml文件解析器\yaml-convector\x64\Debug\yaml-convector.exe
   'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
   或批处理文件。

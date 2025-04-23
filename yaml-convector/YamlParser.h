@@ -58,3 +58,4 @@ public:
     
     static YamlValue loadString(const std::string& yaml);
 };
+
